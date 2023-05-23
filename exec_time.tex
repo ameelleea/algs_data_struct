@@ -1,0 +1,88 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\newcommand{\numberset}{\mathbb}
+\usepackage{mathptmx}
+\usepackage[italian]{babel}
+\usepackage{newlfont}
+\usepackage{color}
+\textwidth=450pt\oddsidemargin=0pt
+\usepackage{textcomp}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{braket}
+\usepackage{bbold}
+\usepackage[margin=2.8cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{systeme,mathtools}
+\usepackage{float}
+\usepackage{relsize}
+\usepackage{dsfont}
+\usepackage{calligra}
+\usepackage{hyperref}
+\usepackage{circuitikz}
+\usepackage{epstopdf}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{titling}
+
+\begin{document}
+
+\section{Tempi di esecuzione (asintotici) algoritmi}
+
+\subsection{Array}          
+\begin{table}[H]
+\begin{tabular}{|l|l|l|l|}
+\hline
+\textbf{}             & \textbf{Caso Pessimo}   & \textbf{Caso Medio} & \textbf{Caso Ottimo} \\ \hline
+\textbf{Visita}       & O(n)                    & O(n)                & O(n)                 \\ \hline
+\textbf{Ricerca lin.} & O(n)                    & /                   & O(1)                 \\ \hline
+\textbf{Ricerca bin.} & O(logn)                 & /                   & O(1)                 \\ \hline
+\textbf{Insertsort}   & O(n\textasciicircum{}2) & /                   & O(n)                 \\ \hline
+\textbf{Selectsort}   & O(n\textasciicircum{}2) & /                   & /                    \\ \hline
+\textbf{Bubblesort}   & O(n\textasciicircum{}2) & /                   & /                    \\ \hline
+\textbf{Mergesort}    & O(nlogn)                & /                   & /                    \\ \hline
+\textbf{Quicksort}    & O(n\textasciicircum{}2) & O(nlogn)            & O(nlogn)             \\ \hline
+\textbf{Heapsort}     & O(nlogn)                & /                   & /                    \\ \hline
+\end{tabular}
+\caption{}
+\label{tab:my-table}
+\end{table}
+
+\subsection{Liste, code, pile}
+\begin{table}[H]
+\begin{tabular}{|l|l|l|l|}
+\hline
+\textbf{}                 & \textbf{Caso Pessimo} & \textbf{Caso Medio} & \textbf{Caso Ottimo} \\ \hline
+\textbf{Visita}           & O(n)                  & /                   & /                    \\ \hline
+\textbf{Ricerca}          & O(n)                  & /                   & O(1)                 \\ \hline
+\textbf{Inserimento l.o.} & O(n)                  & /                   & O(1)                 \\ \hline
+\textbf{Rimozione l.o.}   & O(n)                  & /                   & O(1)                 \\ \hline
+\textbf{Inserimento coda} & O(1)                  & /                   & /                    \\ \hline
+\textbf{Rimozione coda}   & O(1)                  & /                   & /                    \\ \hline
+\textbf{Inserimento pila} & O(1)                  & /                   & /                    \\ \hline
+\textbf{Rimozione pila}   & O(1)                  & /                   & /                    \\ \hline
+\end{tabular}
+\caption{}
+\label{tab:my-table}
+\end{table}
+
+\subsection{Alberi, BST, RN}
+\begin{table}[H]
+\begin{tabular}{|l|l|l|l|}
+\hline
+\textbf{}                & \textbf{Caso Pessimo} & \textbf{Caso Medio} & \textbf{Caso Ottimo} \\ \hline
+\textbf{Visita/ricerca}  & O(n)                  & /                   & O(1)                 \\ \hline
+\textbf{Ricerca BST}     & O(n)                  & O(logn)             & O(1)                 \\ \hline
+\textbf{Inserimento BST} & O(n)                  & O(logn)             & O(1)                 \\ \hline
+\textbf{Rimozione BST}   & O(n)                  & O(logn)             & O(1)                 \\ \hline
+\textbf{Ricerca RN}      & O(logn)               & /                   & /                    \\ \hline
+\textbf{Inserimento RN}  & O(1)                  & /                   & /                    \\ \hline
+\textbf{Rimozione RN}    & O(1)                  & /                   & /                    \\ \hline
+\end{tabular}
+\caption{}
+\label{tab:my-table}
+\end{table}
+
+\end{document}
